@@ -1,0 +1,355 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1{font-size: 3.5em;}
+h2{font-size: 2.7em;}
+h3{font-size: 2;}
+p{font-size: 1.25em;}
+ul{list-style: none;}
+li{font-size: 1.25em;}
+
+button{
+    font-size: 1em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10%;
+    border: 2px solid rgba(0, 0, 0, .5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+    color: white;
+    background-color: blueviolet;
+}
+
+button:hover{
+    background-color: rgb(101, 33, 165);
+}
+
+.contador{
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento{color: blueviolet;}
+
+header{
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: blueviolet;
+    font-size: 1.5em;
+    color: blueviolet;
+    font-weight: bold;
+}
+
+header .contador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+header a:hover{
+    color: blueviolet;
+}
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(pictures/pipipi.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1{
+    color: white;
+}
+
+
+#hero button{
+    font-size: 1.75em;
+}
+
+#somos-gall .contador{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#nuestros-programas{
+    background-color: rgb(30,30,30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-programas .contador{
+    padding: 150px 12px;
+}
+
+#nuestros-programas h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-programas p{
+    display: none;
+}
+
+#nuestros-programas .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 10%;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(pictures/Imagen-2.webp);
+    
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(pictures/lenguajes-de-programacion-html-y-css.png);
+    
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(pictures/maxresdefault.jpg);
+    
+}
+
+#caracteristicas .contador{
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#caracteristicas li{
+    margin: 15px 0px;
+    font-weight: bold;  
+}
+
+#ultima {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(30,30,30);
+    color: white;
+    height: 80vh;
+}
+
+#ultima h2{
+    font-size: 9vw;
+}
+
+#ultima button{
+    font-size: 5vw;
+}
+
+footer{
+    background-color: rgb(230,230,230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .contador {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media(min-width: 720px){
+
+    header{
+        position: fixed;
+        width: 100%;
+        background-color: #e0e3fc;
+    }
+
+    header .contador {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 30px;
+    }
+
+    #hero h1{
+        font-size: 5em;
+    }
+
+    #somos-gall .contador{
+        display: flex;
+        justify-content: space-evenly;
+
+    }
+
+    #somos-gall .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: initial;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somo-gall h2{
+        margin-top: 0px;
+    }
+
+    #somos-gall .img-galli{
+        background-image: url(pictures/19362653-768x432.jpg);
+        background-size: cover;
+        background-position: center center;
+        height: 500px;
+        width: 400px;
+    }
+    
+    #nuestros-programas .programas{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-programas h2{
+        font-size: 4em;
+    }
+
+    #nuestros-programas h3{
+        margin-top: 0;
+    }
+
+    #nuestros-programas .carta {
+        padding: 50px;
+        background-size: 100% 150px;
+        background-repeat: no-repeat;
+        background-position-y: 0;
+        background-color: rgb(50, 50, 50, 0.5); 
+        box-shadow: 2px 2px 10px rgb(0,0,0,0.5);
+    }
+
+    .carta:first-child{
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("pictures/Imagen-2.webp");
+        
+    }
+    
+    .carta:nth-child(2){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("pictures/lenguajes-de-programacion-html-y-css.png");
+        
+    }
+    
+    .carta:nth-child(3){
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("pictures/maxresdefault.jpg");
+    }
+
+    #caracteristicas {
+        background-image: url(pictures/Que-es-la-programacion-reactiva-scaled.webp);
+        background-repeat: no-repeat;
+        background-size: 500px 400px;
+        background-position: calc(100vw - 500px) 100px;
+    }
+
+    #caracteristicas .contador{
+        text-align: initial;
+
+    }
+
+    #caracteristicas ul{
+        margin-left: 100px;
+    }
+
+    #ultima h2{
+        font-size: 5em;
+    }   
+    
+    #ultima button{
+        font-size: 2em;
+    }
+
+    footer .contador {
+        justify-content: flex-end;
+    }
+
+}
+
+@media (min-width: 1200px){
+    #caracteristicas {
+        background-position-x: calc(100vw - 800px);
+    }
+}
